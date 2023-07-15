@@ -8,6 +8,13 @@ terraform {
 
 provider "aws" {
   region = "ap-northeast-1"
+
+  default_tags {
+    tags = {
+      created_by = "terraform"
+      workspace = terraform.workspace
+    }
+  }
 }
 
 resource "aws_s3_bucket" "bucket" {
