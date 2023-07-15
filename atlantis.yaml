@@ -4,6 +4,6 @@ projects:
     dir: .
     workspace: poc
     autoplan:
-      when_modify: ["*.tf", "*.tfvar", "*.yaml", "*.yml", "*.json"]
       enabled: true
+      when_modified: ["*.tf", "*.tfvars", "*.yaml", "*.yml", "*.json"]
     workflow: poc
