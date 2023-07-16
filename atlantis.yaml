@@ -1,9 +1,0 @@
-version: 3
-projects:
-  - name: gitops-atlantis-using-test
-    dir: .
-    workspace: poc
-    autoplan:
-      enabled: true
-      when_modified: ["*.tf", "*.tfvars", "*.yaml", "*.yml", "*.json"]
-    workflow: poc
